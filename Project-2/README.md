@@ -1,0 +1,4 @@
+Output
+
+
+PROJECT 2 FOR MOTION CUT

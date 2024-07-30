@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        var index=1;
+        function nextImage()
+        {
+            index++;
+            if(index>3){
+                index=1;
+            }
+            var obj = document.getElementById("picture");
+            obj.src="img"+index+".jpg";
+        }
+        function prevImage()
+        {
+            index--;
+            if(index<1){
+              index=3;  
+            }
+            var obj = document.getElementById("picture");
+            obj.src="img"+index+".jpg";
+        }
+    </script>
+</head>
+<body>
+    <div class="overlay">
+        <center>
+            <div>
+                <img src="img1.jpg" width="600" height="600" id="picture" alt="loading..." />
+                <div class="caption">
+                    <h2>    DOGS</h2>
+                    <p>DENVER</p>
+                    <span>MOTION CUT SLIDER</span>
+                </div>
+                <button class="nav prev" onclick="prevImage();">&lt;</button>
+                <button class="nav next" onclick="nextImage();">&gt;</button>
+            </div>    
+        </center>
+    </div>
+</body>
+</html>
+
